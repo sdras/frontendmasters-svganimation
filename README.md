@@ -1,5 +1,4 @@
-#Frontend Masters
-##Advanced SVG Animations
+#Frontend Masters: Advanced SVG Animations
 Author: Sarah Drasner
 
 All relevant slides from this lecture series are here:
@@ -19,4 +18,4 @@ There are three directories you can use as GSAP starter kits:
 * master-timeline
 
 ##Part Two, Section Six
-There are a few ways to work with the GSAP timeline in this file: gsap-resources.js
+There are a few ways to work with the GSAP timeline in this file: gsap-resources.js. For any interaction with jQuery, remember to use the 3.0+ version. [Alpha](https://code.jquery.com/jquery-3.0.0-alpha1.js)
