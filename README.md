@@ -6,6 +6,8 @@ All relevant slides from this lecture series are here:
 * [Part Two](https://slides.com/sdrasner/frontendmasters2/)
 * [Part Three](https://slides.com/sdrasner/frontendmasters3/)
 
+All pens used in the slide lectures are in this [Codepen Collection](http://codepen.io/collection/XvBQJQ/).
+
 Included in this repo are some very basic GSAP starter kits. 
 
 ##Part One, Section Three
