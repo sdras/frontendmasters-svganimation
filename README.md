@@ -14,6 +14,8 @@ Included in this repo are some very basic GSAP starter kits.
 There is a resource for the sprite and CSS animation SVG, should you need a starter resource.
 
 ##Part Two, Section Five
+[GreenSock Docs](http://greensock.com/docs/#/HTML5/), [Forums](http://greensock.com/forums/), and [Easing Visualizer](http://greensock.com/ease-visualizer).
+
 There are three directories you can use as GSAP starter kits:
 * basic-tween
 * basic-timeline
