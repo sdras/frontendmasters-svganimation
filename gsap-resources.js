@@ -17,15 +17,24 @@ tl.to(".orange", 1, {x:750})
 
 // Some Useful Timeline function calls
 
-tl.pause(); // Pause timeline
-tl.resume(); // Continue playback
-tl.restart(); // Restart the timeline
-tl.play(X); // Play from Xs
-tl.play(-X); // Play Xs from end
-tl.seek(X); // Go to Xs or 'label'
-tl.reverse(); // Reverse playback anytime
-tl.timeScale(x); // Speed up/slow down timeline
+tl.pause(); // Pause timeline - within a timeline it would be var foo = new TimelineMax({paused:true});, very handy for getting a timeline ready for interaction.
+tl.restart(); // Restart the timeline - very useful for interaction (set the timeline to paused:true, and then trigger restart)
+tl.reverse(); // Reverse playback- nice for exiting a scene in interaction.
+tl.seek(n); // Go to n seconds or 'label'- good for working because you don't have to sit through the whole animation.
+tl.timeScale(n); // Speed up/slow down timeline by n seconds- use this for debugging to slow it down, or for faster playback in action
+tl.globalTimeScale(n); // changes all of the timescales at once- useful for multiple timelines.
 tl.progress(0.5); // Skip to halfway
+tl.resume(); // Continue playback
+tl.resume(n); // Continue playback at n seconds
+tl.play(n); // Play from n seconds- funnily, less useful
+tl.play(-n); // Play n seconds from end
+
+// also options, usage: new TimelineMax({example});
+paused:true // boolean, default is false
+yoyo:true // close to CSS animation direction: alternate- makes the timeline go back and forth.
+repeat:n // iteration count
+delay:n // delay of the whole timeline
+repeatDelay:n // delay in between iteration
 
 //-------------------------------------------------------
 
@@ -38,6 +47,8 @@ drawSVG: "10%" // the first 10%
 drawSVG: "10% 90%" // the first 10% to the last 90%
 drawSVG: "50% 50%" // looks like nothing because both ends at 50%
 drawSVG:"20 350" // the first 20px and 350px
+
+//-------------------------------------------------------
 
 // SplitText
 // creates an array (can use mySplitText.chars, in the case below, foo.chars), also wraps all in divs
